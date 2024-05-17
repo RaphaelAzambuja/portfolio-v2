@@ -1,13 +1,13 @@
 @import "../../app/variables.scss";
 
-.title {
+.projectTitle {
     color: $color-30;
     margin-top: 150px;
 }
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin-top: 50px;
 
@@ -19,21 +19,24 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 20px; // Added padding for spacing inside the project box
+        box-sizing: border-box; // Ensure padding is included in the width and height
 
         .title {
-            justify-self: start;
-            margin-top: 15px;
+            align-self: flex-start;
+            margin-top: 10px;
+            margin-bottom: 20px; // Added margin-bottom for spacing between title and image
         }
 
         .image {
-            width: 200px;
+            width: 150px;
             height: auto;
-            margin-top: 20px;
+            margin-bottom: 20px; // Added margin-bottom for spacing between image and description
         }
 
         .description {
             margin-top: auto;
-            margin-bottom: 50px;
+            margin-bottom: 15px;
         }
     }
 }

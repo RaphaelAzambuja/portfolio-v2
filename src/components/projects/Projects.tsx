@@ -6,6 +6,7 @@ import marujoArtImage from '../../../assets/marujoartstattoo.png';
 import olisaude from '../../../assets/olisaude-logotipo.png';
 import helpdesk from '../../../assets/helpdesk.png';
 import styles from './projects.module.scss';
+import GitHubButton from '../buttons/gitHubButton/GitHubButton';
 
 export default function Projects() {
   const [index, setIndex] = useState(0);
@@ -22,7 +23,7 @@ export default function Projects() {
 
   return (
     <>
-		<h2 className={styles.title}>Nem só de ferramentas viverá o produto!</h2>
+		<h2 className={styles.projectTitle}>Nem só de ferramentas viverá o produto!</h2>
 		<p>Em projetos pessoais amplio meus conhecimentos conceituais.</p>
 
 		<div className={styles.projects}>
@@ -31,6 +32,7 @@ export default function Projects() {
 				<h2 className={styles.title}>{value.title}</h2>
 				<Image className={styles.image} src={value.image} alt='image' />
 				<p className={styles.description}>{value.text}</p>
+        <GitHubButton link={value.link} />
 			</div>
 		))}
 		</div>
