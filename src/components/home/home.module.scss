@@ -1,0 +1,42 @@
+@import '../../app/variables.scss';
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+
+    .title {
+        color: $color-30;
+        font-size: 70px;
+    }
+        
+    .phrase {
+    height: 35px;
+    border-right: 2px solid;
+    animation: blinkCursor 0.8s infinite;
+    font-size: 24px;
+    
+        @keyframes blinkCursor {
+            from {
+                border-right: 2px solid;
+            }
+            
+            to {
+                border-right: 2px solid $color-60;
+            }
+        }
+        
+        @media screen and (max-width: 900px) {
+            height: 30px;
+            margin-top: 20px;
+        }
+    }
+    
+    .description {
+        margin-top: 50px;
+        width: 70%;
+        font-size: 18px;
+    }
+}

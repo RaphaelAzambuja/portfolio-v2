@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={raleway.className}>{children}</body>
+    <html lang="pt-BR">
+        <body className={raleway.className}>{children}</body>
     </html>
   );
 }

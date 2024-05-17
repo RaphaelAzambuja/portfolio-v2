@@ -1,0 +1,39 @@
+@import "../../app/variables.scss";
+
+.title {
+    color: $color-30;
+    margin-top: 150px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 15px;
+    margin-top: 50px;
+
+    .project {        
+        width: 300px;
+        height: 400px;
+        box-shadow: 0 0 5px 5px $color-shadow;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+            justify-self: start;
+            margin-top: 15px;
+        }
+
+        .image {
+            width: 200px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .description {
+            margin-top: auto;
+            margin-bottom: 50px;
+        }
+    }
+}

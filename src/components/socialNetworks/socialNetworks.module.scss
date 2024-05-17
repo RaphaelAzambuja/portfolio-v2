@@ -1,0 +1,18 @@
+@import "../../app/variables.scss";
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+
+        :hover {
+            color: $color-30;
+        }
+    }
+}

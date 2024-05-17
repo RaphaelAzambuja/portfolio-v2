@@ -1,0 +1,14 @@
+@import "../../app/variables.scss";
+
+.footer {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    align-self: flex-end;
+    margin-top: 150px;
+}
