@@ -25,7 +25,7 @@ export default function Abilities() {
 
   return (
     <>
-		<main className={styles.main}>
+		<main id='abilities' className={styles.main}>
 			<h2 className={styles.title}>Um bom desenvolvedor utiliza ótimas ferramentas.</h2>
 			<p>Possuo conhecimento em diversas tecnologias.</p>
 			

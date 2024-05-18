@@ -1,10 +1,16 @@
 @import "../../app/variables.scss";
 
-.message {
-    width: 100%;
-    background: $color-30;
-    color: $color-60;
-    padding: 5px 0;
+.hamburgerIcon {
+    position: fixed;
+    display: block;
+    right: 30px;
+    top: 30px;
+    font-size: 30px;
+    display: none;
+    z-index: 9999;
+    @media screen and (max-width: 1000px) {
+        display: block;
+    }
 }
 
 .header {
@@ -14,12 +20,24 @@
     background: #ffffff;
     box-shadow: 0 5px 10px $color-shadow;
     display: flex;
-    flex-direction: column;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     top: 0;
+    position: sticky;
+    z-index: 9998;
 
-    
+    &.open {
+        transform: translateX(0%);
+    }
+
+    @media screen and (max-width: 1000px) {
+        position: fixed;
+        height: 100vh;
+        flex-direction: column-reverse;
+        transform: translateX(100%);
+    }
+
     .linksbox {
         align-self: center;
         display: flex;
@@ -28,7 +46,11 @@
         align-self: center;
         justify-content: center;
         align-items: center;
-        
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+        }
+
         .link {
             border-radius: 5px;
             padding: 5px 5px;
