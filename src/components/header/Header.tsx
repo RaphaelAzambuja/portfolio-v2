@@ -66,11 +66,11 @@ export default function Header() {
 
             <header className={`${styles.header} ${menuOpen ? styles.open : ''}`}>
                 <div className={`${styles.linksbox} ${menuOpen ? styles.open : ''}`}>
-                    <Link className={`${styles.link} ${activeMenuItem === 'home' ? styles.active : ''}`} href='#home' onClick={() => scrollToAnchor('home')}>Home</Link>
-                    <Link className={`${styles.link} ${activeMenuItem === 'abilities' ? styles.active : ''}`} href='#abilities' onClick={() => scrollToAnchor('abilities')}>Ferramentas</Link>
-                    <Link className={`${styles.link} ${activeMenuItem === 'projects' ? styles.active : ''}`} href='#projects' onClick={() => scrollToAnchor('projects')}>Projetos</Link>
-                    <Link className={`${styles.link} ${activeMenuItem === 'experiences' ? styles.active : ''}`} href='#experiences' onClick={() => scrollToAnchor('experiences')}>Experiências</Link>
-                    <Link className={`${styles.link} ${activeMenuItem === 'skills' ? styles.active : ''}`} href='#skills' onClick={() => scrollToAnchor('skills')}>Competências</Link>
+                    <Link className={`${styles.link} ${activeMenuItem === 'home' ? styles.active : ''}`} href='#' onClick={() => scrollToAnchor('home')}>Home</Link>
+                    <Link className={`${styles.link} ${activeMenuItem === 'abilities' ? styles.active : ''}`} href='#' onClick={() => scrollToAnchor('abilities')}>Ferramentas</Link>
+                    <Link className={`${styles.link} ${activeMenuItem === 'projects' ? styles.active : ''}`} href='#' onClick={() => scrollToAnchor('projects')}>Projetos</Link>
+                    <Link className={`${styles.link} ${activeMenuItem === 'experiences' ? styles.active : ''}`} href='#' onClick={() => scrollToAnchor('experiences')}>Experiências</Link>
+                    <Link className={`${styles.link} ${activeMenuItem === 'skills' ? styles.active : ''}`} href='#' onClick={() => scrollToAnchor('skills')}>Competências</Link>
                 </div>
                 <SocialNetworks />
             </header>
