@@ -14,9 +14,26 @@
     
     .box {
         display: grid;
-        grid-template-columns: repeat(4, 200px);
+        align-items: center;
+        grid-template-columns: repeat(5, 200px);
         margin-top: 50px;
         gap: 10px;
+
+        @media (max-width: 1070px) {
+            grid-template-columns: repeat(4, 200px);
+        }
+
+        @media (max-width: 870px) {
+            grid-template-columns: repeat(3, 200px);
+        }
+
+        @media (max-width: 650px) {
+            grid-template-columns: repeat(2, 200px);
+        }
+
+        @media (max-width: 430px) {
+            grid-template-columns: repeat(1, 200px);
+        }
 
         .abilitie {
             width: 200px;

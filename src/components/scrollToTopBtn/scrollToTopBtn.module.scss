@@ -1,0 +1,15 @@
+@import '../../app/variables.scss';
+
+.button {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: $color-30;
+  border: none;
+  color: $color-60;
+  cursor: pointer;
+  align-self: flex-end;
+  bottom: 0;
+  margin: 0 50px 50px 0;
+}

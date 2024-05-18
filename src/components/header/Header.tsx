@@ -17,7 +17,6 @@ export default function Header() {
                     <Link className={styles.link} href={'/'}>Projetos</Link>
                     <Link className={styles.link} href={'/'}>Experiências</Link>
                     <Link className={styles.link} href={'/'}>Competências</Link>
-                    <Link className={styles.link} href={'/'}>Currículo</Link>
                     <Link className={styles.link} href={'/'}>Contato</Link>
 
                     <SocialNetworks />

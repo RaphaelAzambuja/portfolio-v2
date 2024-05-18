@@ -6,8 +6,10 @@
 }
 
 .projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
     margin-top: 50px;
 
@@ -19,19 +21,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px; // Added padding for spacing inside the project box
-        box-sizing: border-box; // Ensure padding is included in the width and height
+        padding: 20px; 
+        box-sizing: border-box; 
 
         .title {
             align-self: flex-start;
             margin-top: 10px;
-            margin-bottom: 20px; // Added margin-bottom for spacing between title and image
+            margin-bottom: 20px;
         }
 
         .image {
             width: 150px;
             height: auto;
-            margin-bottom: 20px; // Added margin-bottom for spacing between image and description
+            margin-bottom: 20px;
         }
 
         .description {
