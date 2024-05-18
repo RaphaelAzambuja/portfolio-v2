@@ -15,7 +15,7 @@ export default function Header() {
         setMenuOpen(!menuOpen);
     };
 
-    const scrollToAnchor = (anchorId: any) => {
+    const scrollToAnchor = (anchorId: string) => {
         const anchor = document.getElementById(anchorId);
         if (anchor) {
             anchor.scrollIntoView({
@@ -33,7 +33,7 @@ export default function Header() {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
 
-            const sections = ['home', 'abilities', 'projects', 'experiences', 'services'];
+            const sections = ['home', 'abilities', 'projects', 'experiences', 'skills'];
 
             let activeSection = '';
             sections.forEach(sectionId => {
@@ -70,9 +70,9 @@ export default function Header() {
                     <Link className={`${styles.link} ${activeMenuItem === 'abilities' ? styles.active : ''}`} href='#abilities' onClick={() => scrollToAnchor('abilities')}>Ferramentas</Link>
                     <Link className={`${styles.link} ${activeMenuItem === 'projects' ? styles.active : ''}`} href='#projects' onClick={() => scrollToAnchor('projects')}>Projetos</Link>
                     <Link className={`${styles.link} ${activeMenuItem === 'experiences' ? styles.active : ''}`} href='#experiences' onClick={() => scrollToAnchor('experiences')}>Experiências</Link>
-                    <Link className={`${styles.link} ${activeMenuItem === 'services' ? styles.active : ''}`} href='#skills' onClick={() => scrollToAnchor('skills')}>Competências</Link>
+                    <Link className={`${styles.link} ${activeMenuItem === 'skills' ? styles.active : ''}`} href='#skills' onClick={() => scrollToAnchor('skills')}>Competências</Link>
                 </div>
-                    <SocialNetworks />
+                <SocialNetworks />
             </header>
         </>
     );

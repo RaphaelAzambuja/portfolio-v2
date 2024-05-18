@@ -61,7 +61,7 @@ export default function Home() {
   }, [currentPhraseIndex]);
   return (
     <>
-        <div className={styles.box}>
+        <div id="home" className={styles.box}>
             <h1 className={styles.title}>Raphael Azambuja</h1>
             <h3 className={styles.phrase}>{displayedPhrase}</h3>
             <p className={styles.description}>
