@@ -1,14 +1,12 @@
 "use client"
 
 import { useEffect, useState } from "react";
-import { FaGithub } from "react-icons/fa";
 import styles from "./home.module.scss";
 
 export default function Home() {
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   const [displayedPhrase, setDisplayedPhrase] = useState('');
   const [isTypingComplete, setIsTypingComplete] = useState(false);
-  const icons = [<FaGithub />];
   useEffect(() => {
     const phrases = [
       'Desenvolvedor Back-end',
