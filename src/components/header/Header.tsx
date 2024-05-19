@@ -18,43 +18,16 @@ export default function Header() {
     const scrollToAnchor = (anchorId: string) => {
         const anchor = document.getElementById(anchorId);
         if (anchor) {
-            anchor.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-            });
+            window.scrollTo({
+                behavior: "smooth",
+                top:0
+              });
 
             if (window.innerWidth < 1000) {
                 setMenuOpen(false);
             }
         }
     };
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollPosition = window.scrollY;
-
-            const sections = ['home', 'abilities', 'projects', 'experiences', 'skills'];
-
-            let activeSection = '';
-            sections.forEach(sectionId => {
-                const element = document.getElementById(sectionId);
-                if (element) {
-                    const offsetTop = element.offsetTop;
-                    const offsetBottom = offsetTop + element.offsetHeight;
-                    if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
-                        activeSection = sectionId;
-                    }
-                }
-            });
-
-            setActiveMenuItem(activeSection);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
     return (
         <>
@@ -67,10 +40,10 @@ export default function Header() {
             <header className={`${styles.header} ${menuOpen ? styles.open : ''}`}>
                 <div className={`${styles.linksbox} ${menuOpen ? styles.open : ''}`}>
                     <Link className={`${styles.link} ${activeMenuItem === 'home' ? styles.active : ''}`} href='#' onClick={() => scrollToAnchor('home')}>Home</Link>
-                    <Link className={`${styles.link} ${activeMenuItem === 'abilities' ? styles.active : ''}`} href='#' onClick={() => scrollToAnchor('abilities')}>Ferramentas</Link>
-                    <Link className={`${styles.link} ${activeMenuItem === 'projects' ? styles.active : ''}`} href='#' onClick={() => scrollToAnchor('projects')}>Projetos</Link>
-                    <Link className={`${styles.link} ${activeMenuItem === 'experiences' ? styles.active : ''}`} href='#' onClick={() => scrollToAnchor('experiences')}>Experiências</Link>
-                    <Link className={`${styles.link} ${activeMenuItem === 'skills' ? styles.active : ''}`} href='#' onClick={() => scrollToAnchor('skills')}>Competências</Link>
+                    <Link className={`${styles.link} ${activeMenuItem === 'abilities' ? styles.active : ''}`} href='#abilities'>Ferramentas</Link>
+                    <Link className={`${styles.link} ${activeMenuItem === 'projects' ? styles.active : ''}`} href='#projects'>Projetos</Link>
+                    <Link className={`${styles.link} ${activeMenuItem === 'experiences' ? styles.active : ''}`} href='#experiences'>Experiências</Link>
+                    <Link className={`${styles.link} ${activeMenuItem === 'skills' ? styles.active : ''}`} href='#skills'>Competências</Link>
                 </div>
                 <SocialNetworks />
             </header>
