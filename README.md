@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Meu portfólio
 
-## Getting Started
+Este é o repositório do meu portfólio online, desenvolvido utilizando o framework Next.js.
 
-First, run the development server:
+![](./readme-images/image.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Link para o Portfólio
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Você pode acessar o portfólio através do seguinte link:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[raphaelazambuja.github.io/portfolio-v2/](https://raphaelazambuja.github.io/portfolio-v2/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Uso do Next.js
 
-## Learn More
+Este portfólio foi desenvolvido utilizando Next.js, um framework React que oferece diversas funcionalidades avançadas como:
 
-To learn more about Next.js, take a look at the following resources:
+- **Renderização do Lado do Servidor (SSR):** Melhora a performance e SEO do site.
+- **Geração de Sites Estáticos (SSG):** Permite que páginas sejam geradas estaticamente em build time, resultando em um desempenho muito rápido.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Escolhi Next.js porque é o framework da biblioteca que estou aprendendo na faculdade e ele proporciona uma excelente experiência de desenvolvimento, além de ser altamente utilizado na indústria.
