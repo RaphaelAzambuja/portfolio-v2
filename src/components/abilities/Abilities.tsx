@@ -27,7 +27,7 @@ export default function Abilities() {
     <>
 		<main id='abilities' className={styles.main}>
 			<h2 className={styles.title}>Um bom desenvolvedor utiliza ótimas ferramentas.</h2>
-			<p>Possuo conhecimento em diversas tecnologias.</p>
+			<p className={styles.text}>Possuo conhecimento em diversas tecnologias.</p>
 			
 			<div className={styles.box}>
 			{icons.map((item, index) => (

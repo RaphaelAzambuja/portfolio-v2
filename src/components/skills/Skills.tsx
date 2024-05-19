@@ -14,7 +14,7 @@ export default function Skills() {
 				{services.map((service, index) => (
 					<div className={styles.skill} key={index}>
 						<div className={styles.name}>{service.name}</div>
-						<p>{service.description}</p>
+						<p className={styles.decription}>{service.description}</p>
 					</div>
 				))}
 			</div>

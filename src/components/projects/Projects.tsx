@@ -24,7 +24,7 @@ export default function Projects() {
   return (
     <>
 		<h2 id='projects' className={styles.projectTitle}>Nem só de ferramentas viverá o produto!</h2>
-		<p>Em projetos pessoais amplio meus conhecimentos conceituais.</p>
+		<p className={styles.text}>Em projetos pessoais amplio meus conhecimentos conceituais.</p>
 
 		<div className={styles.projects}>
 		{values.map((value, index) => (
