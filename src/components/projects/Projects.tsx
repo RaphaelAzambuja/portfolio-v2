@@ -16,7 +16,6 @@ export default function Projects() {
   };
 
   const values = [
-    { title: "Marujo Art's Tattoo", text: "Uma landing page para expor o trabalho no estúdio de tatuagens e piercings do meu irmão.", image: marujoArtImage, link: 'https://github.com/RaphaelAzambuja/marujo-arts-tattoo' },
     { title: "APIs OlíSaúde", text: "Teste usado para testar e aprimorar minhas habilidades com Laravel.", image: olisaude, link: 'https://github.com/RaphaelAzambuja/teste-tecnico-olisaude' },
     { title: "Service-Desk", text: "Um app para gerenciar chamados de helpdesk e servicedesk usado para aprimorar os designs patterns repository, service e mvc.", image: helpdesk, link: 'https://github.com/RaphaelAzambuja/service-desk' },
   ];
