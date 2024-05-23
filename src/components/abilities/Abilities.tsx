@@ -1,4 +1,4 @@
-import { SiLivewire, SiNuxtdotjs, SiTailwindcss } from 'react-icons/si';
+import { SiExpress, SiLivewire, SiNestjs, SiNuxtdotjs, SiTailwindcss } from 'react-icons/si';
 import { IoLogoSass } from 'react-icons/io';
 import { FaBootstrap, FaDocker, FaLaravel, FaLinux, FaPhp, FaReact, FaVuejs } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
@@ -9,7 +9,8 @@ export default function Abilities() {
   const icons = [
     { icon: <FaPhp />, name: 'PHP' },
     { icon: <FaLaravel />, name: 'Laravel' },
-    { icon: <SiLivewire />, name: 'livewire' },
+    { icon: <SiExpress />, name: 'Express'},
+    { icon: <SiNestjs />, name: 'Nest'},
     { icon: <FaReact />, name: 'React' },
     { icon: <TbBrandNextjs />, name: 'Next' },
     { icon: <FaVuejs />, name: 'Vue' },
