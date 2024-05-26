@@ -9,7 +9,8 @@ export default function Skills() {
 
 	return (
 		<>
-			<h2 id="skills" className={styles.title}>Competências</h2>
+		<main className={styles.skills} id="skills">
+			<h2 className={styles.title}>Competências</h2>
 			<div className={styles.box}>
 				{services.map((service, index) => (
 					<div className={styles.skill} key={index}>
@@ -18,6 +19,7 @@ export default function Skills() {
 					</div>
 				))}
 			</div>
+		</main>
 		</>
 	);
 };

@@ -22,20 +22,21 @@ export default function Projects() {
 
   return (
     <>
-		<h2 id='projects' className={styles.projectTitle}>Nem só de ferramentas viverá o produto!</h2>
-		<p className={styles.text}>Em projetos pessoais amplio meus conhecimentos conceituais.</p>
+    <main id="projects">
+      <h2 className={styles.projectTitle}>Nem só de ferramentas viverá o produto!</h2>
+      <p className={styles.text}>Em projetos pessoais amplio meus conhecimentos conceituais.</p>
 
-		<div className={styles.projects}>
-		{values.map((value, index) => (
-			<div className={styles.project} key={index}>
-				<h2 className={styles.title}>{value.title}</h2>
-				<Image className={styles.image} src={value.image} alt='image' />
-				<p className={styles.description}>{value.text}</p>
-        <GitHubButton link={value.link} />
-			</div>
-		))}
-		</div>
-      
+      <div className={styles.projects}>
+      {values.map((value, index) => (
+        <div className={styles.project} key={index}>
+          <h2 className={styles.title}>{value.title}</h2>
+          <Image className={styles.image} src={value.image} alt='image' />
+          <p className={styles.description}>{value.text}</p>
+          <GitHubButton link={value.link} />
+        </div>
+      ))}
+      </div>
+    </main>
     </>
   );
 }
