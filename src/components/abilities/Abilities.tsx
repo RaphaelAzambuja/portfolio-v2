@@ -1,4 +1,4 @@
-import { SiExpress, SiLivewire, SiNestjs, SiNuxtdotjs, SiSpringboot, SiTailwindcss } from 'react-icons/si';
+import { SiExpress, SiLivewire, SiNestjs, SiNuxtdotjs, SiRedis, SiSpringboot, SiTailwindcss } from 'react-icons/si';
 import { IoLogoSass } from 'react-icons/io';
 import { FaBootstrap, FaDocker, FaJava, FaLaravel, FaLinux, FaPhp, FaReact, FaVuejs } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
@@ -18,6 +18,7 @@ export default function Abilities() {
     { icon: <SiTailwindcss />, name: 'Tailwind' },
     { icon: <BiLogoPostgresql />, name: 'PostgreSQL' },
     { icon: <BiLogoMongodb />, name: 'MongoDB' },
+    { icon: <SiRedis />, name: 'Redis' },
     { icon: <FaDocker />, name: 'Docker' },
     { icon: <FaLinux />, name: 'Linux' },
   ];

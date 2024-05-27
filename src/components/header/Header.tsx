@@ -101,13 +101,6 @@ export default function Header() {
                     >
                         Competências
                     </Link>
-                    <Link 
-                        className={`${styles.link} ${activeMenuItem === 'mailer' ? styles.active : ''}`} 
-                        href='#mailer' 
-                        onClick={() => scrollToAnchor('mailer')}
-                    >
-                        contato
-                    </Link>
                 </div>
                 <SocialNetworks />
             </header>

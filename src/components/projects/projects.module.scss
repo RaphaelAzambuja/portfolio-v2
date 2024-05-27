@@ -6,13 +6,12 @@
 
     @media screen and (max-width: 1000px) {
         margin-top: 100px;
-        max-width: 95%;
     }
 }
 
 .text {
-    width: 90%;
-    margin-top: 10px;    
+    width: 100%;
+    margin-top: 10px;  
 }
 
 .projects {
@@ -40,15 +39,26 @@
             margin-bottom: 20px;
         }
 
-        .image {
-            width: 150px;
-            height: auto;
-            margin-bottom: 20px;
+        .description {
+            margin-bottom: auto;
+            text-align: left;
         }
 
-        .description {
-            margin-top: auto;
-            margin-bottom: 15px;
+        .icons {
+            display: flex;
+            margin-bottom: 20px;
+            gap: 10px;
+
+            .icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+
+                &:hover {
+                    color: $color-30;
+                }
+            }
         }
     }
 }
