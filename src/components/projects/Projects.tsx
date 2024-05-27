@@ -53,13 +53,11 @@ export default function Projects() {
         <div className={styles.project} key={index}>
           <h2 className={styles.title}>{value.title}</h2>
           <p className={styles.description}>{value.text}</p>
-
           <div className={styles.icons}>
-            {value.icons?.map((icon, index) =>(
+            {value.icons.map((icon, index) =>(
               <div key={index} className={styles.icon}>{icon}</div>
             ))}
           </div>
-
           <GitHubButton link={value.link} />
         </div>
       ))}
