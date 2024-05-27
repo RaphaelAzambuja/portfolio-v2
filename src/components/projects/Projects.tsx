@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import styles from './projects.module.scss';
 import GitHubButton from '../buttons/gitHubButton/GitHubButton';
-import { DiRedis } from 'react-icons/di';
 import { FaJava, FaLaravel, FaPhp } from 'react-icons/fa';
 import { SiRuby, SiRubyonrails, SiSpringboot } from 'react-icons/si';
 import { BiLogoPostgresql } from 'react-icons/bi';
@@ -54,8 +53,8 @@ export default function Projects() {
           <h2 className={styles.title}>{value.title}</h2>
           <p className={styles.description}>{value.text}</p>
           <div className={styles.icons}>
-            {value.icons.map((icon, index) =>(
-              <div key={index} className={styles.icon}>{icon}</div>
+            {value.icons.map((icon, iconIndex) =>(
+              <div className={styles.icon} key={iconIndex}>{icon}</div>
             ))}
           </div>
           <GitHubButton link={value.link} />
