@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import cebrac from '../../../assets/cebrac.jpg';
 import prefeitura from '../../../assets/prefeitura.jpg';
 import exon from '../../../assets/exon.jpg';
+import nitro from '../../../assets/nitro.jpg';
 import Image from 'next/image';
 import styles from './Experiences.module.scss';
 
@@ -24,11 +25,18 @@ export default function Experiences() {
 
   const experiences = [
     {
+      img: nitro,
+      date: '07/24 - Atualmente',
+      name: 'Nitro Ecommerce',
+      title: 'Desenvolvedor PHP.',
+      description: 'Responsável por implementar funcionalidades e manter a qualidade de diversos produtos e sistemas da empresa, além de fornecer suporte ao usuário para garantir melhor usabilidade e satisfação do cliente.',
+    },
+    {
       img: exon,
       date: '01/24 - 04/24',
       name: 'Exon Sistemas',
       title: 'Desenvolvedor WEB full-stack.',
-      description: 'Responsavel por implementar features e prestar manutenções no produto da empresa utilizando Laravel, Javascript e SQLServer.',
+      description: 'Fui responsavel por prestar manutenções no principal produto da empresa utilizando Laravel, Javascript e SQLServer.',
     },
     {
       img: prefeitura,
