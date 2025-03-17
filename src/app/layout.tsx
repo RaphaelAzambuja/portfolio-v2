@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
         <body className={raleway.className}>
-          <Message />
+          {/* <Message /> */}
           <Header />
           {children}
           <Footer />

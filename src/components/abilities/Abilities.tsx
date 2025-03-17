@@ -1,26 +1,25 @@
-import { SiSpringboot, SiSwagger, SiTailwindcss } from 'react-icons/si';
-import { IoLogoSass } from 'react-icons/io';
+import { SiSpring, SiPostman, SiTailwindcss } from "react-icons/si";
 import { FaBootstrap, FaDocker, FaJava, FaLaravel, FaLinux, FaPhp, FaReact } from 'react-icons/fa';
-import { TbBrandNextjs } from 'react-icons/tb';
+import { TbBrandLivewire, TbBrandNextjs } from 'react-icons/tb';
 import { BiLogoMongodb, BiLogoPostgresql } from 'react-icons/bi';
 import styles from './abilities.module.scss';
 
 export default function Abilities() {
   const icons = [
-    { icon: <FaJava />, name: 'Java'},
-    { icon: <SiSpringboot />, name: 'Spring Boot'},
-    { icon: <FaPhp />, name: 'PHP'},
-    { icon: <FaLaravel />, name: 'Laravel'},
-    { icon: <FaReact />, name: 'React' },
-    { icon: <TbBrandNextjs />, name: 'Next' },
-    { icon: <IoLogoSass />, name: 'Sass' },
-    { icon: <FaBootstrap />, name: 'Bootstrap' },
-    { icon: <SiTailwindcss />, name: 'Tailwind' },
-    { icon: <BiLogoPostgresql />, name: 'PostgreSQL' },
-    { icon: <BiLogoMongodb />, name: 'MongoDB' },
-    { icon: <SiSwagger />, name: 'Swagger' },
-    { icon: <FaDocker />, name: 'Docker' },
-    { icon: <FaLinux />, name: 'Linux' },
+    { icon: <FaJava />, name: "Java" },
+    { icon: <SiSpring />, name: "Spring" },
+    { icon: <FaPhp />, name: "PHP" },
+    { icon: <FaLaravel />, name: "Laravel" },
+    { icon: <TbBrandLivewire />, name: "Livewire" },
+    { icon: <FaReact />, name: "React" },
+    { icon: <TbBrandNextjs />, name: "Next" },
+    { icon: <FaBootstrap />, name: "Bootstrap" },
+    { icon: <SiTailwindcss />, name: "Tailwind" },
+    { icon: <BiLogoPostgresql />, name: "PostgreSQL" },
+    { icon: <BiLogoMongodb />, name: "MongoDB" },
+    { icon: <SiPostman />, name: 'Postman' },
+    { icon: <FaDocker />, name: "Docker" },
+    { icon: <FaLinux />, name: "Linux" },
   ];
 
   return (

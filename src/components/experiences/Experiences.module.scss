@@ -1,62 +1,60 @@
-@import "../../app/variables.scss";
-
+@use "../../app/variables" as *; 
 .experiences {
-    text-align: center;
-    margin-top: 150px;
-  
-    @media screen and (max-width: 1000px) {
-      margin-top: 100px;
-    }
+  text-align: center;
+  margin-top: 150px;
 
-    h2 {
-      color: $color-30;
-    }
-  
-    .container {
+  @media screen and (max-width: 1000px) {
+    margin-top: 100px;
+  }
+
+  h2 {
+    color: $color-30;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .experience {
+    background: #fff;
+    margin: 10px;
+    width: 300px;
+    padding: 20px 0;
+    text-align: left;
+    box-shadow: 0 0 5px 5px $color-shadow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .image-container {
+      width: 90%;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 50px;
-    }
-  
-    .experience {
-      background: #fff;
-      margin: 10px;
-      width: 300px;
-      padding: 20px 0;
-      text-align: left;
-      box-shadow: 0 0 5px 5px $color-shadow;
-      display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-bottom: 15px;
+    }
 
-      .image-container {
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 15px;
-      }
-  
-      .date-name {
-        width: 90%;
-        font-weight: bold;
-        margin-bottom: 10px;
-  
-        span {
-          font-weight: normal;
-        }
-      }
-  
-      .title {
-        width: 90%;
-        margin-bottom: 10px;
-      }
+    .date-name {
+      width: 90%;
+      font-weight: bold;
+      margin-bottom: 10px;
 
-      .description {
-        width: 90%;
+      span {
+        font-weight: normal;
       }
     }
+
+    .title {
+      width: 90%;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      width: 90%;
+    }
   }
-  
+}

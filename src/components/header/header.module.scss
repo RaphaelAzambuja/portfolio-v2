@@ -1,69 +1,68 @@
-@import "../../app/variables.scss";
-
+@use "../../app/variables" as *; 
 .hamburgerIcon {
-    position: fixed;
+  position: fixed;
+  display: block;
+  right: 30px;
+  top: 30px;
+  font-size: 30px;
+  display: none;
+  z-index: 9999;
+  @media screen and (max-width: 1000px) {
     display: block;
-    right: 30px;
-    top: 30px;
-    font-size: 30px;
-    display: none;
-    z-index: 9999;
-    @media screen and (max-width: 1000px) {
-        display: block;
-    }
+  }
 }
 
 .active {
-    background: $color-60;
-    color: $color-30;
+  background: $color-60;
+  color: $color-30;
 }
 
 .header {
-    width: 100%;
+  width: 100%;
+  align-self: center;
+  padding: 15px 0;
+  background: #ffffff;
+  box-shadow: 0 5px 10px $color-shadow;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  position: sticky;
+  z-index: 9998;
+
+  &.open {
+    transform: translateX(0%);
+  }
+
+  @media screen and (max-width: 1000px) {
+    position: fixed;
+    height: 100vh;
+    flex-direction: column-reverse;
+    transform: translateX(100%);
+  }
+
+  .linksbox {
     align-self: center;
-    padding: 15px 0;
-    background: #ffffff;
-    box-shadow: 0 5px 10px $color-shadow;
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    font-size: 20px;
+    align-self: center;
     justify-content: center;
     align-items: center;
-    top: 0;
-    position: sticky;
-    z-index: 9998;
-
-    &.open {
-        transform: translateX(0%);
-    }
 
     @media screen and (max-width: 1000px) {
-        position: fixed;
-        height: 100vh;
-        flex-direction: column-reverse;
-        transform: translateX(100%);
+      flex-direction: column;
     }
 
-    .linksbox {
-        align-self: center;
-        display: flex;
-        gap: 20px;
-        font-size: 20px;
-        align-self: center;
-        justify-content: center;
-        align-items: center;
+    .link {
+      border-radius: 5px;
+      padding: 5px 5px;
 
-        @media screen and (max-width: 1000px) {
-            flex-direction: column;
-        }
-
-        .link {
-            border-radius: 5px;
-            padding: 5px 5px;
-
-            &:hover {
-                background: $color-60;
-                color: $color-30;
-            }
-        }
+      &:hover {
+        background: $color-60;
+        color: $color-30;
+      }
     }
+  }
 }
